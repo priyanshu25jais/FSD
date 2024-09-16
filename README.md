@@ -1,2 +1,2 @@
 # FSD
-This is my first ggit repository
+This is my first Git Repository.
