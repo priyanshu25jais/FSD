@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>John Doe</h1>
+            <p>Email: john.doe@example.com | LinkedIn: <a href="https://linkedin.com/in/johndoe">johndoe</a> | GitHub: <a href="https://github.com/johndoe">johndoe</a></p>
+            <p>Professional Summary: Passionate software developer with 5 years of experience in full-stack development.</p>
+        </header>
+
+        <section>
+            <h2>Skills</h2>
+            <canvas id="skillsChart"></canvas>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Task Management App</h3>
+                <p>Description: Developed a task management web application to help users organize their tasks and deadlines.</p>
+                <p>Technologies Used: React, Node.js, Express, MongoDB</p>
+                <p>Outcome: Improved team productivity by 40%, received 150+ stars on GitHub</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>Description: Built an e-commerce platform for a local business to sell their products online.</p>
+                <p>Technologies Used: Django, PostgreSQL, Bootstrap</p>
+                <p>Outcome: Increased online sales by 50%, handled 1000+ concurrent users</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Software Engineer | Tech Solutions Inc.</h3>
+                <p>June 2018 - Present</p>
+                <p>Led the development of various web applications and managed a team of junior developers.</p>
+                <p>Achievements: Reduced bug rate by 25%, implemented CI/CD pipeline</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

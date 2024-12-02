@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+        }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+            
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        nav a:hover, nav a.active {
+            background-color: #de3a79;
+            border-radius: 2px;
+            transition: .4s;
+            color: white;
+            /* cursor: pointer; */
+        }
+        main {
+            background: url("background.jpg") no-repeat center center/cover;
+            height: calc(100vh - 72px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .buttons a {
+            background-color: #8b1496;
+            box-shadow: 5px 3px;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+        .buttons a:hover{
+            color: #1d293a;
+        }
+        .logo{
+            opacity:0.7 ;
+        }
+        .content{
+            color: black;
+        }
+        .section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CASCADE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                    <li><a href="#feedback" >Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="content">
+            <h1>Create Something New</h1> 
+        </div>
+        <br><br>
+            <div class="buttons">
+                <a href="https://www.w3schools.com/Css/" target="_blank">Explore More</a>
+                <a href="https://htmlcheatsheet.com/css/" target="_blank">Get in Touch</a>
+            </div>
+        
+    </main>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a team of passionate creators committed to building innovative solutions that transform ideas into reality. Our mission is to inspire creativity and empower our clients with exceptional products and services.</p>
+    </section>
+    
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <p>From web development to digital marketing, we offer a wide range of services designed to meet your unique needs. Our team of experts is dedicated to delivering high-quality solutions tailored to help you succeed.</p>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us! We're here to help and would love to hear from you. Connect with us via email or phone to get started on your next project.</p>
+    </section>
+    
+    <section id="feedback" class="section">
+        <h2>Feedback</h2>
+        <p>Your feedback is important to us! We appreciate your comments and suggestions as they help us improve and better serve you. Let us know your thoughts and experiences.</p>
+    </section>
+</body>
+</html>
