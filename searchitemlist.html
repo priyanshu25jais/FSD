@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10%;
+        }
+        input {
+            border: solid;
+            width: 50%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0%;
+            background-color: rgb(169, 205, 202);
+        }
+        li {
+        }
+        .hidden {
+            display: none;
+        }
+        li:hover {
+            background-color: #23b0ae;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Filter</h1>
+    <input type="text" placeholder="search for items" id="s">
+    <ul id="i">
+        <li>java script</li>
+        <li>java</li>
+        <li>python</li>
+        <li>c</li>
+        <li>c++</li>
+        <li>mern</li>
+        <li>html</li>
+    </ul>
+    <script>
+        const searchInput = document.getElementById('s');
+        const items = document.getElementById("i");
+        const itemsList = items.getElementsByTagName("li");
+        searchInput.addEventListener('input', function() {
+            const filter = searchInput.value.toLowerCase();
+            Array.from(itemsList).forEach(function(item) {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
